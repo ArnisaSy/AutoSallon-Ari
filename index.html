@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Auto Sallon ARI | Podujeve</title>
+    <meta
+      name="description"
+      content="Auto Sallon ARI ne Podujeve - vetura te perzgjedhura, SUV, familjare dhe kombi."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Auto Sallon ARI">
+        <img src="assets/logo.jpg" alt="Auto Sallon ARI logo" />
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Hap menune">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" aria-label="Navigimi kryesor">
+        <a href="#veturat">Veturat</a>
+        <a href="#sherbimet">Sherbimet</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#kontakti">Kontakti</a>
+        <a href="https://www.facebook.com/autosallonARI/" target="_blank" rel="noopener">Facebook</a>
+      </nav>
+      <a class="header-call" href="tel:+38349368322">049 368 322</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Auto Sallon ARI">
+        <picture>
+          <source srcset="assets/audi.jpg" media="(min-width: 760px)" />
+          <img src="assets/audi.jpg" alt="Audi i zi para Auto Sallon ARI" />
+        </picture>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Podujeve, Kosove</p>
+          <h1>Auto Sallon ARI</h1>
+          <p>
+            Zgjedhje moderne e veturave te kontrolluara per familje, biznes dhe
+            udhetime te perditshme.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#veturat">Shiko veturat</a>
+            <a class="button ghost" href="https://www.facebook.com/autosallonARI/" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
+        <div class="hero-strip" aria-label="Pikat kryesore">
+          <span>Import i perzgjedhur</span>
+          <span>Dokumentacion i qarte</span>
+          <span>Kontakt direkt</span>
+        </div>
+      </section>
+
+      <section class="section intro" aria-label="Prezantim">
+        <div>
+          <p class="eyebrow">Per ne</p>
+          <h2>Makina qe duken mire dhe ndihen edhe me mire ne rruge.</h2>
+        </div>
+        <p>
+          Auto Sallon ARI ne Podujeve ofron vetura te mirembajtura me fokus ne
+          pamje, komoditet dhe prakticitet. Nga SUV premium deri te Caddy,
+          Transporter dhe vetura familjare, cdo zgjedhje prezantohet qarte dhe
+          pa komplikime.
+        </p>
+      </section>
+
+      <section class="section inventory-section" id="veturat">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Ne oferte</p>
+            <h2>Veturat e fundit</h2>
+          </div>
+          <div class="filters" aria-label="Filtro veturat">
+            <button class="filter active" type="button" data-filter="all">Te gjitha</button>
+            <button class="filter" type="button" data-filter="suv">SUV</button>
+            <button class="filter" type="button" data-filter="hatchback">Hatchback</button>
+            <button class="filter" type="button" data-filter="kombi">Kombi</button>
+          </div>
+        </div>
+
+        <div class="inventory-grid">
+          <article class="car-card" data-category="suv">
+            <button class="card-image" type="button" data-gallery="assets/audi.jpg">
+              <img src="assets/audi.jpg" alt="Audi SUV i zi" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">SUV premium</p>
+                <h3>Audi Q3 2.0 TDI Quattro 3X S-Line</h3>
+              </div>
+              <p>Karroseri e zeze, quattro, motor 3.0 TDI dhe prezence e forte.</p>
+              <div class="specs">
+                <span>Automatik</span>
+                <span>Diesel</span>
+                <span>Quattro</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="suv">
+            <button class="card-image" type="button" data-gallery="assets/bmw.jpg">
+              <img src="assets/bmw.jpg" alt="BMW SUV i bardhe" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">SUV familjar</p>
+                <h3>BMW X3 20d X Line</h3>
+              </div>
+              <p>Hapesire, rehati dhe stil i paster per perdorim familjar.</p>
+              <div class="specs">
+                <span>Automatik</span>
+                <span>Diesel</span>
+                <span>xDrive</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="suv">
+            <button class="card-image" type="button" data-gallery="assets/merecedes.jpg">
+              <img src="assets/merecedes.jpg" alt="Mercedes SUV i bardhe" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">SUV premium</p>
+                <h3>Mercedes-Benz GLE</h3>
+              </div>
+              <p>Komoditet premium, dukje e paster dhe pozicion i larte vozitjeje.</p>
+              <div class="specs">
+                <span>Automatik</span>
+                <span>Diesel</span>
+                <span>Premium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="hatchback">
+            <button class="card-image" type="button" data-gallery="assets/golf.jpg">
+              <img src="assets/golf.jpg" alt="Volkswagen Golf i bardhe" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">Hatchback</p>
+                <h3>Volkswagen Golf 7 1.6 TDI DSG</h3>
+              </div>
+              <p>Ekonomik, i paster dhe i pershtatshem per qytet e udhetime.</p>
+              <div class="specs">
+                <span>DSG</span>
+                <span>Diesel</span>
+                <span>1.6 TDI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="hatchback">
+            <button class="card-image" type="button" data-gallery="assets/golf2.jpg">
+              <img src="assets/golf2.jpg" alt="Volkswagen Golf i zi" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">Hatchback</p>
+                <h3>Volkswagen Golf 7</h3>
+              </div>
+              <p>Model praktik me dizajn elegant dhe shpenzim te arsyeshem.</p>
+              <div class="specs">
+                <span>Manual</span>
+                <span>Diesel</span>
+                <span>5 dyer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="kombi">
+            <button class="card-image" type="button" data-gallery="assets/caddy.jpg">
+              <img src="assets/caddy.jpg" alt="Volkswagen Caddy i bardhe" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">Kombi pune</p>
+                <h3>Volkswagen Caddy 2.0 SDI</h3>
+              </div>
+              <p>Zgjidhje praktike per pune, transport dhe biznes te vogel.</p>
+              <div class="specs">
+                <span>Diesel</span>
+                <span>Me klime</span>
+                <span>Hapesire</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="kombi">
+            <button class="card-image" type="button" data-gallery="assets/kombi.jpg">
+              <img src="assets/kombi.jpg" alt="Volkswagen Transporter i bardhe" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">Transport</p>
+                <h3>Volkswagen T5 1.9 TDI</h3>
+              </div>
+              <p>Kapacitet i madh, karroseri solide dhe gati per pune ditore.</p>
+              <div class="specs">
+                <span>Diesel</span>
+                <span>T5</span>
+                <span>Ekonomik</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="kombi">
+            <button class="card-image" type="button" data-gallery="assets/caddy2.jpg">
+              <img src="assets/caddy2.jpg" alt="Volkswagen Caddy i bardhe nga ana" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">Kombi familjar</p>
+                <h3>VW Caddy 5 ulse 1.6 TDI</h3>
+              </div>
+              <p>Caddy praktik me 5 ulse, i pershtatshem per familje dhe pune.</p>
+              <div class="specs">
+                <span>1.6 TDI</span>
+                <span>5 ulse</span>
+                <span>Me klime</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="kombi">
+            <button class="card-image" type="button" data-gallery="assets/caddy3.jpg">
+              <img src="assets/caddy3.jpg" alt="Volkswagen Caddy i bardhe" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">Kombi pune</p>
+                <h3>VW Caddy 2.0 SDI 2007</h3>
+              </div>
+              <p>Model i mirembajtur me klime, centrall dhe pajisje praktike.</p>
+              <div class="specs">
+                <span>2.0 SDI</span>
+                <span>2007</span>
+                <span>Me TVSH</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="kombi">
+            <button class="card-image" type="button" data-gallery="assets/kombi3.jpg">
+              <img src="assets/kombi3.jpg" alt="Volkswagen T5 i hirit" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">Transport</p>
+                <h3>VW T5 6 ulse Maxi</h3>
+              </div>
+              <p>Transporter me hapesire te madhe dhe konfigurim 6 ulesesh.</p>
+              <div class="specs">
+                <span>1.9 TDI</span>
+                <span>6 ulse</span>
+                <span>Maxi</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-category="kombi">
+            <button class="card-image" type="button" data-gallery="assets/kombi2.jpg">
+              <img src="assets/kombi2.jpg" alt="Volkswagen T5 i bardhe" />
+            </button>
+            <div class="card-body">
+              <div>
+                <p class="car-type">Kargo</p>
+                <h3>VW T5 Frigo 1.9 TDI</h3>
+              </div>
+              <p>Variant pune per transport, i listuar si T5 Frigo ne ofertat publike.</p>
+              <div class="specs">
+                <span>Frigo</span>
+                <span>1.9 TDI</span>
+                <span>Kargo</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-inventory" aria-label="Modele te tjera">
+          <div>
+            <p class="eyebrow">Modele te tjera</p>
+            <h3>Te publikuara ne listimet online te Auto Sallon ARI</h3>
+            <p>Disponueshmeria ndryshon shpejt, prandaj konfirmo modelin me telefon ose Facebook.</p>
+          </div>
+          <ul>
+            <li><span>Skoda Fabia 1.6 TDI</span><strong>2014</strong></li>
+            <li><span>Skoda Fabia Monte Carlo</span><strong>2014</strong></li>
+            <li><span>Skoda Fabia 1.4 TDI</span><strong>2016</strong></li>
+            <li><span>Audi A6 3.0 TDI Quattro</span><strong>2015</strong></li>
+            <li><span>Mercedes Sprinter Maxi 311 CDI</span><strong>Ne oferte</strong></li>
+            <li><span>Mercedes Sprinter Automatik</span><strong>Ne oferte</strong></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section services" id="sherbimet">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Sherbimet</p>
+            <h2>Blerje me proces te thjeshte</h2>
+          </div>
+        </div>
+        <div class="service-grid">
+          <div class="service-item">
+            <span>01</span>
+            <h3>Konsultim per zgjedhje</h3>
+            <p>Ndihme per ta gjetur modelin qe i pershtatet buxhetit dhe nevojes.</p>
+          </div>
+          <div class="service-item">
+            <span>02</span>
+            <h3>Kontroll dhe transparence</h3>
+            <p>Informata te qarta per gjendjen, pajisjet dhe dokumentacionin.</p>
+          </div>
+          <div class="service-item">
+            <span>03</span>
+            <h3>Termin per shikim</h3>
+            <p>Rezervo kohe per ta pare veturen nga afer dhe per te bere prove vozitjeje.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="galeria">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Galeria</p>
+            <h2>Pamje nga salloni</h2>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <button type="button" data-gallery="assets/pamje.jpg">
+            <img src="assets/pamje.jpg" alt="Tabela e Auto Sallon ARI" />
+          </button>
+          <button type="button" data-gallery="assets/merecedes.jpg">
+            <img src="assets/merecedes.jpg" alt="Mercedes SUV i bardhe" />
+          </button>
+          <button type="button" data-gallery="assets/caddy2.jpg">
+            <img src="assets/caddy2.jpg" alt="Volkswagen Caddy i bardhe nga profili" />
+          </button>
+          <button type="button" data-gallery="assets/kombi3.jpg">
+            <img src="assets/kombi3.jpg" alt="Volkswagen kombi i hirit" />
+          </button>
+          <button type="button" data-gallery="assets/golf3.jpg">
+            <img src="assets/golf3.jpg" alt="Volkswagen Golf i bardhe" />
+          </button>
+          <button type="button" data-gallery="assets/caddy3.jpg">
+            <img src="assets/caddy3.jpg" alt="Volkswagen Caddy i bardhe" />
+          </button>
+          <button type="button" data-gallery="assets/kombi2.jpg">
+            <img src="assets/kombi2.jpg" alt="Volkswagen Transporter i bardhe" />
+          </button>
+        </div>
+      </section>
+
+      <section class="contact" id="kontakti">
+        <div class="contact-copy">
+          <p class="eyebrow">Kontakti</p>
+          <h2>Gati per ta pare nga afer?</h2>
+          <p>
+            Na kontakto per disponueshmeri, cmim ose termin per shikim ne Podujeve.
+          </p>
+        </div>
+        <div class="contact-panel">
+          <a href="tel:+38344171131">
+            <span>Telefon</span>
+            <strong>044 171 131</strong>
+          </a>
+          <a href="tel:+38349171131">
+            <span>Telefon</span>
+            <strong>049 171 131</strong>
+          </a>
+          <a href="tel:+38349368322">
+            <span>Telefon</span>
+            <strong>049 368 322</strong>
+          </a>
+          <a href="https://wa.me/38349368322">
+            <span>WhatsApp</span>
+            <strong>Shkruaj mesazh</strong>
+          </a>
+          <a href="https://www.facebook.com/autosallonARI/" target="_blank" rel="noopener">
+            <span>Facebook</span>
+            <strong>Auto Sallon ARI</strong>
+          </a>
+          <a href="google.com/maps?cid=14759996693764209831">
+            <span>Lokacioni</span>
+            <strong>Podujeve</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="assets/logo.jpg" alt="Auto Sallon ARI logo" />
+      <p>&copy; 2026 Auto Sallon ARI. All rights reserved. Website by Arnisa Sylejmani.</p>
+      <a href="#top">Lart</a>
+    </footer>
+
+    <dialog class="lightbox" data-lightbox>
+      <button type="button" class="close-lightbox" data-close aria-label="Mbyll pamjen">&times;</button>
+      <img src="assets/audi.jpg" alt="" data-lightbox-image />
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
